@@ -36,8 +36,8 @@ int D2_step = 12;
 int D3_step = 12; 
 int D4_step = 12;
 int D5_step = 12; 
-int D6_step = 12; 
-int D7_step = 12; 
+int D6_step = 4; 
+int D7_step = 15; 
 
 int ss=0;
 long crossTime;
