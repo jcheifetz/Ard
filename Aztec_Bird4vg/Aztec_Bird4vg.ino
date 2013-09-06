@@ -1,4 +1,4 @@
-t#define _BV(bit) (1 << (bit))
+#define _BV(bit) (1 << (bit))
 #define SINE_LENGTH 365
 #define SUB_STEP_LENGTH 1
 #define MIN 130
@@ -9,7 +9,7 @@ int sine[SINE_LENGTH+1] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
   221,219,217,215,212,210,208,205,203,200,198,195,192,190,187,184,181,178,176,173,170,167,164,161,158,155,152,149,146,143,139,136,133,130,127,124,121,118,115,111,108,105,102,99,96,93,90,87,84,81,78,
   76,73,70,67,64,62,59,56,54,51,49,46,44,42,39,37,35,33,31,29,27,25,23,21,20,18,16,15,14,12,11,10,9,7,6,5,5,4,3,2,2,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
-int subSteps[SUB_STEP_LENGTH+1] = {1,-1};
+int subSteps[SUB_STEP_LENGTH+1] = {16,-1};
 int subStepsTime[SUB_STEP_LENGTH+1] = {3000,2000};
 
 int subStepsCurrent = 0;//4
@@ -30,13 +30,13 @@ int D5_pos = 250;
 int D6_pos = 300; 
 int D7_pos = 300; 
 
-int D0_step = 12; 
-int D1_step = 12; 
-int D2_step = 12; 
-int D3_step = 12; 
-int D4_step = 12;
-int D5_step = 12; 
-int D6_step = 12; 
+int D0_step = 53; 
+int D1_step = 51; 
+int D2_step = 49; 
+int D3_step = 47; 
+int D4_step = 45;
+int D5_step = 43; 
+int D6_step = 41; 
 int D7_step = 15; 
 
 int ss=0;
