@@ -54,6 +54,9 @@ void setup(){
   pinMode(7, OUTPUT);   
   pinMode(6, OUTPUT);   
 
+// using 8,9,10,11
+
+
  PORTB |= _BV(5);//13
   // init delay
   crossTime = micros();
