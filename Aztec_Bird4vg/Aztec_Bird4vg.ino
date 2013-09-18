@@ -90,16 +90,16 @@ void zeroCross(){
         PORTB |= _BV(4);//12
      }
      if ((i==sine[D2_pos] || i==MIN) && subSteps[subStepsCurrent]!=-1){
-        PORTB |= _BV(3);//11  
+        PORTB |= _BV(3);//11*  
      }
      if ((i==sine[D3_pos] || i==MIN) && subSteps[subStepsCurrent]!=-1){
-        PORTB |= _BV(2);//10 
+        PORTB |= _BV(2);//10* 
      }
      if ((i==sine[D4_pos] || i==MIN) && subSteps[subStepsCurrent]!=-1){
-        PORTB |= _BV(1);//9   
+        PORTB |= _BV(1);//9*   
      }
      if ((i==sine[D5_pos] || i==MIN) && subSteps[subStepsCurrent]!=-1){
-        PORTB |= _BV(0);//8
+        PORTB |= _BV(0);//8*
      }
      if ((i==sine[D6_pos] || i==MIN) && subSteps[subStepsCurrent]!=-1){
         PORTD |= _BV(7);//7
