@@ -13,8 +13,8 @@ int subStepsCurrent = 0;//4
 int ssTime = 0;
 
 // Robus
-int stepTime = 16;
-int initDelay = 800;
+int stepTime = 14;
+int initDelay = 1000;
 
 int IP0_pin = 2; 
 
@@ -42,17 +42,15 @@ boolean crossed=false;
 
 void setup(){ 
   pinMode(IP0_pin, INPUT);   
-  pinMode(13, OUTPUT);  
-  pinMode(12, OUTPUT);   
-  pinMode(11, OUTPUT);   
-  pinMode(10, OUTPUT);   
-  pinMode(9, OUTPUT);   
-  pinMode(8, OUTPUT); 
-  pinMode(7, OUTPUT);   
-  pinMode(6, OUTPUT);   
+  pinModeFast(3, OUTPUT);  
+  pinModeFast(4, OUTPUT);   
+  pinModeFast(5, OUTPUT);   
+  pinModeFast(6, OUTPUT);   
+  pinModeFast(7, OUTPUT);   
+  pinModeFast(8, OUTPUT); 
+  pinModeFast(10, OUTPUT);   
+  pinModeFast(11, OUTPUT);   
   
-pinModeFast(51,OUTPUT);
-digitalWriteFast2(51, LOW);
 // using 8,9,10,11
 
 
@@ -87,34 +85,34 @@ void zeroCross(){
   for (int i=0;i<256;i++){ 
 	 
      if ((i==sine[D6_pos] || i==MIN) && subSteps[subStepsCurrent]!=-1 && sine[D6_pos]>sine[D0_pos]){
-	     PORTD |= _BV(7);//7*
+	     digitalWriteFast2(7, HIGH);
      }
      if ((i==sine[D0_pos] || i==MIN) && subSteps[subStepsCurrent]!=-1 && sine[D0_pos]>sine[D6_pos]){
-	     PORTD |= _BV(7);//7*
+	     digitalWriteFast2(7, HIGH);
      }
 	 
 
      if ((i==sine[D2_pos] || i==MIN) && subSteps[subStepsCurrent]!=-1 && sine[D2_pos]>sine[D0_pos]){
-	     PORTB |= _BV(3);//11*
+	     digitalWriteFast2(11, HIGH);
      }
      if ((i==sine[D0_pos] || i==MIN) && subSteps[subStepsCurrent]!=-1 && sine[D0_pos]>sine[D2_pos]){
-	     PORTB |= _BV(3);//11*
+	     digitalWriteFast2(11, HIGH);
      }
 
 	 
      if ((i==sine[D3_pos] || i==MIN) && subSteps[subStepsCurrent]!=-1 && sine[D3_pos]>sine[D0_pos]){
-	     PORTB |= _BV(2);//10*
+	     digitalWriteFast2(10, HIGH);
      }
      if ((i==sine[D0_pos] || i==MIN) && subSteps[subStepsCurrent]!=-1 && sine[D0_pos]>sine[D3_pos]){
-	     PORTB |= _BV(2);//10*
+	     digitalWriteFast2(10, HIGH);
      }
 	 
 	 
      if ((i==sine[D1_pos] || i==MIN) && subSteps[subStepsCurrent]!=-1 && sine[D1_pos]>sine[D0_pos]){
-	     PORTB |= _BV(4);//12*
+	     digitalWriteFast2(12, HIGH);
      }
      if ((i==sine[D0_pos] || i==MIN) && subSteps[subStepsCurrent]!=-1 && sine[D0_pos]>sine[D1_pos]){
-	     PORTB |= _BV(4);//12*
+	     digitalWriteFast2(12, HIGH);
      }
 	 	 /**/
      crossTime = micros();
@@ -130,13 +128,10 @@ void zeroCross(){
 
    // switch all off
    //PORTB &= ~_BV(5);//13
-   PORTB &= ~_BV(4);//12
-   PORTB &= ~_BV(3);//11   
-   PORTB &= ~_BV(2);//10   
-   PORTB &= ~_BV(1);//9   
-   PORTB &= ~_BV(0);//8
-   PORTD &= ~_BV(7);//7   
-   PORTD &= ~_BV(6);//6 
+   digitalWriteFast2(7, LOW);
+   digitalWriteFast2(11, LOW);
+   digitalWriteFast2(10, LOW);
+   digitalWriteFast2(12, LOW); 
 
    ssTime++;
    if (ssTime==subStepsTime[subStepsCurrent]){
