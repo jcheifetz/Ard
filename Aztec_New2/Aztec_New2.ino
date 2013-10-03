@@ -42,7 +42,7 @@ boolean crossed=false;
 
 void setup(){ 
   pinMode(IP0_pin, INPUT);   
-  pinModeFast(3, OUTPUT);
+  pinModeFast(12, OUTPUT);
   pinModeFast(4, OUTPUT);
   pinModeFast(5, OUTPUT);
   pinModeFast(6, OUTPUT);
@@ -85,7 +85,7 @@ void zeroCross(){
   for (int i=0;i<256;i++){ 
    
      if ((i==sine[D0_pos] || i==MIN) && subSteps[subStepsCurrent]!=-1){
-        digitalWriteFast2(3, HIGH);
+        digitalWriteFast2(12, HIGH);
      }
      if ((i==sine[D7_pos] || i==MIN) && subSteps[subStepsCurrent]!=-1){
         digitalWriteFast2(4, HIGH);
@@ -122,7 +122,7 @@ void zeroCross(){
 
 
    // switch all off
-   digitalWriteFast2(3, LOW);
+   digitalWriteFast2(12, LOW);
    digitalWriteFast2(4, LOW);
    digitalWriteFast2(5, LOW);
    digitalWriteFast2(6, LOW);

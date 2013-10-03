@@ -14,16 +14,16 @@ int op = 10;
 // the setup routine runs once when you press reset:
 void setup() {                
   // initialize the digital pin as an output.
-  pinModeFast2(led, OUTPUT);  
-  pinModeFast2(op, OUTPUT);   
+  pinModeFast(led, OUTPUT);  
+  pinModeFast(op, OUTPUT);   
 }
 
 // the loop routine runs over and over again forever:
 void loop() {
   digitalWriteFast2(led, HIGH);   // turn the LED on (HIGH is the voltage level)
-  digitalWriteFast2(op, HIGH);
+  //digitalWriteFast2(op, HIGH);
   delay(1000);               // wait for a second
   digitalWriteFast2(led, LOW);    // turn the LED off by making the voltage LOW
-  digitalWriteFast2(op, LOW); 
+  //digitalWriteFast2(op, LOW); 
   delay(1000);               // wait for a second
 }

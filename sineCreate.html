@@ -1,0 +1,41 @@
+<html>
+<body>
+
+<script>
+
+
+var sec = 0.3;
+var bs = 100;
+var osc = 50 - bs;
+var ln = 0;
+
+
+
+
+var steps = sec * 100;
+ln = steps;
+
+var str="";
+
+
+
+for (var i=0;i<steps;i++){
+	var pos = (Math.PI / steps) * i;
+
+	vl = parseInt(Math.sin(pos)*osc);
+	vl += bs;
+
+	vl = 255 - vl;
+	str += vl+", ";
+}
+
+
+//for (var i=0;i<steps;i++){
+//	str+=bs+", ";
+//}
+
+document.write(str +"<br/><br/>" + ln);
+
+</script>
+</body>
+</html>
