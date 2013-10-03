@@ -1,12 +1,17 @@
 <html>
 <body>
-
+<div id="op"></div>
+<div style="position:absolute;width:100%;height:255px;border:1px solid red;background:yellow;" id="dr"></div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
 <script>
 
+$(function(){
 
-var sec = 0.3;
-var bs = 100;
-var osc = 50 - bs;
+var x = 0;
+
+var sec = 12;
+var bs = 0;
+var osc = 255 - bs;
 var ln = 0;
 
 
@@ -27,15 +32,25 @@ for (var i=0;i<steps;i++){
 
 	vl = 255 - vl;
 	str += vl+", ";
+
+	draw(vl);
 }
 
 
 //for (var i=0;i<steps;i++){
-//	str+=bs+", ";
+//	str+=(255-bs)+", ";
 //}
 
-document.write(str +"<br/><br/>" + ln);
+$("#op").html(str +"<br/><br/>" + ln);
 
+function draw(vl){
+var e = $("<div/>").css({position:"absolute",left:++x+"px",top:vl+"px"}).text("*");
+
+$("#dr").append(e);
+
+}
+
+});
 </script>
 </body>
 </html>
