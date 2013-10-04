@@ -11,22 +11,23 @@ var x = 0;
 var ln = 0;
 var str="";
 
+for (k=0;k<4;k++){
+	var ts = parseInt(Math.random()*4);
 
+	for (var i=0;i<4;i++){
 
-for (var i=0;i<9;i++){
+		var tm = parseInt(Math.random()*(ts*ts)*50)+5;
+		vl = parseInt(Math.random()*100)+50;
 
-	var tm = parseInt(Math.random()*2.5*50)+5;
-	vl = parseInt(Math.random()*100)+50;
+		for (j=0;j<tm;j++){
 
-	for (j=0;j<tm;j++){
-
-		str += (255-vl)+", ";
-		draw(vl);
-		ln++;
+			str += (255-vl)+", ";
+			draw(vl);
+			ln++;
+		}
 	}
+
 }
-
-
 $("#op").html(str +"<br/><br/>" + ln);
 
 function draw(vl){
