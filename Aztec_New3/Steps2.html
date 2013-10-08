@@ -9,40 +9,44 @@ $(function(){
 
 var x = 0;
 
-var sec = .1;
-var wait = .1
+var sec = 1;
+var wait = 4
 
-var bs = 100;
-var osc = 10;
+
+var osc = 255;
 var ln = 0;
-
-
-
 
 var steps = sec * 50;
 wait = wait * 50;
-ln = steps + wait;
+
 
 var str="";
 
+var t0 = 50 * 4;
+var t1 = 50 * 5;
+var t2 = 50 * 4;
 
 
-for (var i=0;i<steps;i++){
-	var pos = (Math.PI / steps) * i;
 
-	vl = parseInt(Math.sin(pos)*osc);
-	vl += bs;
+for (j=0;j<t0;j++){
 
-	vl = 255 - vl;
-	str += vl+", ";
-
-	draw(vl);
+	draw(0);
 }
+for (j=0;j<t1;j++){
+
+	draw(125);
+}
+for (j=0;j<t2;j++){
+
+	draw(255);
+}
+
+
 
 // wait
 for (var i=0;i<wait;i++){
-	str+=(255-bs)+", ";
-	draw(vl);
+	//str+=(0)+", ";
+	//draw(vl);
 }
 
 $("#op").html(str +"<br/><br/>" + ln);
@@ -53,8 +57,8 @@ var b = $("<div/>").css({position:"absolute",left:x+"px",bottom:"5px"}).text("-"
 var t = $("<div/>").css({position:"absolute",left:x+"px",bottom:"260px"}).text("-");
 x+=5;
 $("#dr").append(e).append(b).append(t);
-
-
+ln++;
+str+=(255-vl)+ " ,"
 }
 
 });

@@ -8,35 +8,52 @@
 $(function(){
 
 var x = 0;
+
+var sec = 1;
+var wait = 4
+
+
+var osc = 255;
 var ln = 0;
+
+var steps = sec * 50;
+wait = wait * 50;
+
+
 var str="";
 
-for (k=0;k<4;k++){
-	var ts = parseInt(Math.random()*4);
 
-	for (var i=0;i<4;i++){
+for (j=0;j<30;j++){
 
-		var tm = parseInt(Math.random()*(ts*ts)*50)+5;
-		vl = parseInt(Math.random()*100)+50;
-
-		for (j=0;j<tm;j++){
-
-			str += (255-vl)+", ";
-			draw(vl);
-			ln++;
-		}
-	}
-
+	draw(250);
 }
+for (j=0;j<30;j++){
+
+	draw(200);
+}
+
+for (j=0;j<120;j++){
+
+	//draw(255);
+}
+
+
+// wait
+for (var i=0;i<wait;i++){
+	//str+=(0)+", ";
+	//draw(vl);
+}
+
 $("#op").html(str +"<br/><br/>" + ln);
 
 function draw(vl){
 var e = $("<div/>").css({position:"absolute",left:x+"px",bottom:vl+"px"}).text("*");
 var b = $("<div/>").css({position:"absolute",left:x+"px",bottom:"5px"}).text("-");
 var t = $("<div/>").css({position:"absolute",left:x+"px",bottom:"260px"}).text("-");
-x+=2;
+x+=5;
 $("#dr").append(e).append(b).append(t);
-
+ln++;
+str+=(255-vl)+ " ,"
 }
 
 });

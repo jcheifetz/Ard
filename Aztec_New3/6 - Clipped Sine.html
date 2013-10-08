@@ -9,45 +9,46 @@ $(function(){
 
 var x = 0;
 
-var sec = .1;
-var wait = 5
+var sec = 5;
+var wait = 4
 
-var bs = 100;
-var osc = 10;
+
+var osc = 400;
 var ln = 0;
 
 var steps = sec * 50;
 wait = wait * 50;
 
-
 var str="";
 
-for (j=0;j<3;j++){
-// wait
-	for (var i=0;i<wait;i++){
-		vl = 100;
-		str+=(255-vl)+", ";
-		draw(vl);
-	}
+for (var i=0;i<steps;i++){
+	var pos = (Math.PI / steps) * i;
+
+	vl = parseInt(Math.sin(pos)*osc);
+	if (vl>255) vl = 255;
+	//vl += bs;
+	draw(vl);
+	vl = 255 - vl;
+	str += vl+", ";
 
 
-	// wait
-	for (var i=0;i<wait;i++){
-		vl = 200;
-		str+=(255-vl)+", ";
-		draw(vl);
-	}
 }
+
+// wait
+for (var i=0;i<wait;i++){
+	//str+=(0)+", ";
+	//draw(vl);
+}
+
 $("#op").html(str +"<br/><br/>" + ln);
 
 function draw(vl){
-	ln++;
 var e = $("<div/>").css({position:"absolute",left:x+"px",bottom:vl+"px"}).text("*");
 var b = $("<div/>").css({position:"absolute",left:x+"px",bottom:"5px"}).text("-");
 var t = $("<div/>").css({position:"absolute",left:x+"px",bottom:"260px"}).text("-");
 x+=5;
 $("#dr").append(e).append(b).append(t);
-
+ln++;
 
 }
 

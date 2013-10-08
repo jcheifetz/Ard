@@ -12,9 +12,9 @@
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>Aztec_New3</AssemblyName>
-    <Name>Aztec_New3</Name>
-    <RootNamespace>Aztec_New3</RootNamespace>
+    <AssemblyName>Blink</AssemblyName>
+    <Name>Blink</Name>
+    <RootNamespace>Blink</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
@@ -27,14 +27,13 @@
     <UncachedRange />
     <BootSegment>0</BootSegment>
     <AsfFrameworkConfig>
-      <framework-data>
+      <framework-data xmlns="">
         <options />
         <configurations />
         <files />
         <documentation help="" />
-        <offline-documentation help="" />
         <dependencies>
-          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.3.0" />
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.7.2" />
         </dependencies>
       </framework-data>
     </AsfFrameworkConfig>
@@ -308,16 +307,7 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="0 - Array Test.html">
-      <SubType>compile</SubType>
-    </None>
-    <None Include="7 - Random Levels.html">
-      <SubType>compile</SubType>
-    </None>
-    <None Include="8 - Fast Pulsate.html">
-      <SubType>compile</SubType>
-    </None>
-    <None Include="Aztec_New3.ino">
+    <None Include="Blink.ino">
       <SubType>compile</SubType>
     </None>
   </ItemGroup>
@@ -325,7 +315,7 @@
     <Folder Include="Visual Micro\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Visual Micro\.Aztec_New3.vsarduino.h">
+    <Compile Include="Visual Micro\.Blink.vsarduino.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>
