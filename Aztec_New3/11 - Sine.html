@@ -9,7 +9,7 @@ $(function(){
 
 var x = 0;
 
-var sec = 21.5;
+var sec = 37;
 var wait = 5*50;
 
 
@@ -25,7 +25,7 @@ for (var i=0;i<steps;i++){
 	var pos = (Math.PI / steps) * i;
 
 	vl = parseInt(Math.sin(pos)*osc);
-	if (vl<35) vl = 35;
+	//if (vl<35) vl = 35;
 	draw(vl);
 }
 

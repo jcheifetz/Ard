@@ -12,7 +12,7 @@ var x = 0;
 var sec = .1;
 var wait = .1
 
-var bs = 100;
+var bs = 70;
 var osc = 10;
 var ln = 0;
 
@@ -32,16 +32,13 @@ for (var i=0;i<steps;i++){
 	vl = parseInt(Math.sin(pos)*osc);
 	vl += bs;
 
-	vl = 255 - vl;
-	str += vl+", ";
-
 	draw(vl);
 }
 
 // wait
 for (var i=0;i<wait;i++){
-	str+=(255-bs)+", ";
-	draw(vl);
+
+	draw(bs);
 }
 
 $("#op").html(str +"<br/><br/>" + ln);
@@ -53,7 +50,7 @@ var t = $("<div/>").css({position:"absolute",left:x+"px",bottom:"260px"}).text("
 x+=5;
 $("#dr").append(e).append(b).append(t);
 ln++;
-
+str+=(255-vl)+ " ,"
 }
 
 });
