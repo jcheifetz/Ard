@@ -311,6 +311,9 @@
     <None Include="0 - Array Test.html">
       <SubType>compile</SubType>
     </None>
+    <None Include="6 - Clipped Sine.html">
+      <SubType>compile</SubType>
+    </None>
     <None Include="7 - Random Levels.html">
       <SubType>compile</SubType>
     </None>
