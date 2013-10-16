@@ -42,8 +42,10 @@ void zeroCross(){
   if (t==0){
 	  r = random(16)+1;
 	  r = 256 - (r*r);
-	  t = random(31);
-	  t = 910-(t*t);
+	  
+	  //t = random(31);
+	  //t = 910-(t*t);
+	  t = r*10;
   }
   t--;
 	  
