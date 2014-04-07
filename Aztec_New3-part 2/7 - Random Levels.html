@@ -8,36 +8,34 @@
 $(function(){
 
 var x = 0;
-
-var sec = .20;
-var base = 125;
-
-var osc = 255;
 var ln = 0;
-
-var steps = sec * 100;
-
-
 var str="";
 
-for (var i=0;i<steps;i++){
-	var pos = (Math.PI / steps) * i;
+for (k=0;k<4;k++){
+	var ts = parseInt(Math.random()*4);
 
-	vl = parseInt(Math.sin(pos)*osc);
-	if (vl<base) vl = base;
-	draw(vl);
+	for (var i=0;i<4;i++){
+
+		var tm = parseInt(Math.random()*(ts*ts)*50)+5;
+		vl = parseInt(Math.random()*100)+50;
+
+		for (j=0;j<tm;j++){
+
+			str += (255-vl)+", ";
+			draw(vl);
+		}
+	}
+
 }
-
 $("#op").html(str +"<br/><br/>" + ln);
 
 function draw(vl){
 var e = $("<div/>").css({position:"absolute",left:x+"px",bottom:vl+"px"}).text("*");
 var b = $("<div/>").css({position:"absolute",left:x+"px",bottom:"5px"}).text("-");
 var t = $("<div/>").css({position:"absolute",left:x+"px",bottom:"260px"}).text("-");
-x+=5;
+x+=2;
 $("#dr").append(e).append(b).append(t);
 ln++;
-str+=(255-vl)+ " ,"
 }
 
 });

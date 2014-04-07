@@ -9,23 +9,39 @@ $(function(){
 
 var x = 0;
 
-var sec = .20;
-var base = 125;
+var sec = 1;
+var wait = 4
+
 
 var osc = 255;
 var ln = 0;
 
-var steps = sec * 100;
+var steps = sec * 50;
+wait = wait * 50;
 
 
 var str="";
 
-for (var i=0;i<steps;i++){
-	var pos = (Math.PI / steps) * i;
 
-	vl = parseInt(Math.sin(pos)*osc);
-	if (vl<base) vl = base;
-	draw(vl);
+for (j=0;j<30;j++){
+
+	draw(250);
+}
+for (j=0;j<30;j++){
+
+	draw(200);
+}
+
+for (j=0;j<120;j++){
+
+	//draw(255);
+}
+
+
+// wait
+for (var i=0;i<wait;i++){
+	//str+=(0)+", ";
+	//draw(vl);
 }
 
 $("#op").html(str +"<br/><br/>" + ln);

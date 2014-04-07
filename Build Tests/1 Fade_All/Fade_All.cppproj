@@ -12,9 +12,9 @@
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>dm1</AssemblyName>
-    <Name>dm1</Name>
-    <RootNamespace>dm1</RootNamespace>
+    <AssemblyName>Fade_All</AssemblyName>
+    <Name>Fade_All</Name>
+    <RootNamespace>Fade_All</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
@@ -28,15 +28,15 @@
     <BootSegment>0</BootSegment>
     <AsfFrameworkConfig>
       <framework-data>
-  <options />
-  <configurations />
-  <files />
-  <documentation help="" />
-  <offline-documentation help="" />
-  <dependencies>
-    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.3.0" />
-  </dependencies>
-</framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.3.0" />
+        </dependencies>
+      </framework-data>
     </AsfFrameworkConfig>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
@@ -50,6 +50,10 @@
         <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
         <avrgcc.compiler.symbols.DefSymbols>
           <ListValues>
+            <Value>ARDUINO=105</Value>
+            <Value>__AVR_ATmega328P__</Value>
+            <Value>F_CPU=16000000L</Value>
+            <Value>__AVR__</Value>
           </ListValues>
         </avrgcc.compiler.symbols.DefSymbols>
         <avrgcc.compiler.directories.IncludePaths>
@@ -106,7 +110,7 @@
         <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
         <avrgcccpp.compiler.symbols.DefSymbols>
           <ListValues>
-            <Value>ARDUINO=103</Value>
+            <Value>ARDUINO=105</Value>
             <Value>__AVR_ATmega328P__</Value>
             <Value>F_CPU=16000000L</Value>
             <Value>__AVR__</Value>
@@ -180,6 +184,10 @@
         <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
         <avrgcc.compiler.symbols.DefSymbols>
           <ListValues>
+            <Value>ARDUINO=105</Value>
+            <Value>__AVR_ATmega328P__</Value>
+            <Value>F_CPU=16000000L</Value>
+            <Value>__AVR__</Value>
           </ListValues>
         </avrgcc.compiler.symbols.DefSymbols>
         <avrgcc.compiler.directories.IncludePaths>
@@ -236,7 +244,7 @@
         <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
         <avrgcccpp.compiler.symbols.DefSymbols>
           <ListValues>
-            <Value>ARDUINO=103</Value>
+            <Value>ARDUINO=105</Value>
             <Value>__AVR_ATmega328P__</Value>
             <Value>F_CPU=16000000L</Value>
             <Value>__AVR__</Value>
@@ -300,15 +308,17 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="4 - Sine.html">
+    <None Include="Fade_All.ino">
       <SubType>compile</SubType>
     </None>
-    <None Include="7 - Random Levels.html">
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Visual Micro\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Visual Micro\.Fade_All.vsarduino.h">
       <SubType>compile</SubType>
-    </None>
-    <None Include="dm1.ino">
-      <SubType>compile</SubType>
-    </None>
+    </Compile>
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>

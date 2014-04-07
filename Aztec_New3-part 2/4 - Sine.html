@@ -9,26 +9,36 @@ $(function(){
 
 var x = 0;
 
-var sec = .20;
-var base = 125;
+var sec = 1;
 
 var osc = 255;
 var ln = 0;
 
-var steps = sec * 100;
+var steps = sec * 50;
 
 
 var str="";
+
+// wait
+for (var i=0;i<3*50;i++){
+	draw(30);
+}
 
 for (var i=0;i<steps;i++){
 	var pos = (Math.PI / steps) * i;
 
 	vl = parseInt(Math.sin(pos)*osc);
-	if (vl<base) vl = base;
+	if (vl<35) vl = 35;
 	draw(vl);
 }
 
-$("#op").html(str +"<br/><br/>" + ln);
+
+// wait
+for (var i=0;i<3*50;i++){
+	draw(0);
+}
+
+$("#op").html(str +"<br/><br/<br/>" + ln);
 
 function draw(vl){
 var e = $("<div/>").css({position:"absolute",left:x+"px",bottom:vl+"px"}).text("*");

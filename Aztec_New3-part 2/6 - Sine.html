@@ -9,13 +9,14 @@ $(function(){
 
 var x = 0;
 
-var sec = .20;
-var base = 125;
+var sec = 21.5;
+var wait = 5*50;
+
 
 var osc = 255;
 var ln = 0;
 
-var steps = sec * 100;
+var steps = sec * 50;
 
 
 var str="";
@@ -24,9 +25,14 @@ for (var i=0;i<steps;i++){
 	var pos = (Math.PI / steps) * i;
 
 	vl = parseInt(Math.sin(pos)*osc);
-	if (vl<base) vl = base;
+	if (vl<35) vl = 35;
 	draw(vl);
 }
+
+// wait
+//for (var i=0;i<wait;i++){
+//	draw(50);
+//}
 
 $("#op").html(str +"<br/><br/>" + ln);
 
