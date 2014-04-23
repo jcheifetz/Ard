@@ -337,6 +337,9 @@
     <Compile Include="Visual Micro\.Aztec_New3-part 2.vsarduino.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="Visual Micro\.Aztec_New3-part 3.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Visual Micro\.Aztec_New3.vsarduino.h">
       <SubType>compile</SubType>
     </Compile>

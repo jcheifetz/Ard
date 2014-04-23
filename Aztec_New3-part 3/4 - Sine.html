@@ -1,0 +1,68 @@
+<html>
+<body>
+<div id="op"></div>
+<div style="position:absolute;width:100%;height:280px;border:1px solid red;background:yellow;" id="dr"></div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+<script>
+
+$(function(){
+
+var x = 0;
+
+var sec = 4;
+var sec2 = 35;
+var osc = 255;
+var ln = 0;
+
+var steps = sec * 50;
+var steps2 = sec2 * 50;
+
+var str="";
+var i=0;
+
+for (var j=0;j<steps2;j++){
+    var pos2 = (Math.PI / steps2) * j;
+    vl2 = Math.sin(pos2);
+
+	var pos = (Math.PI / steps) * i;
+
+	vl = Math.sin(pos)*255;
+	//vl*=vl2;
+    vl = parseInt(vl);
+    if (vl>255){
+        vl=255;
+    }
+    if (vl<0){
+        vl=0;
+    }
+    i++;
+
+    if (i>steps){
+        i=steps;
+    }
+
+	draw(vl);
+
+}
+
+// wait
+for (var i=0;i<3*50;i++){
+	draw(0);
+}
+
+$("#op").html(str +"<br/><br/<br/>" + ln);
+
+function draw(vl){
+var e = $("<div/>").css({position:"absolute",left:x+"px",bottom:vl+"px"}).text("*");
+var b = $("<div/>").css({position:"absolute",left:x+"px",bottom:"5px"}).text("-");
+var t = $("<div/>").css({position:"absolute",left:x+"px",bottom:"260px"}).text("-");
+x+=5;
+$("#dr").append(e).append(b).append(t);
+ln++;
+str+=(255-vl)+ " ,"
+}
+
+});
+</script>
+</body>
+</html>
