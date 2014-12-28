@@ -58,46 +58,18 @@
         </avrgcc.compiler.symbols.DefSymbols>
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
-            <Value>C:\Program Files\Arduino\hardware\arduino\cores\arduino</Value>
-            <Value>C:\Program Files\Arduino\hardware\arduino\variants\standard</Value>
-            <Value>C:\Program Files\Arduino\libraries\digitalWriteFast</Value>
-            <Value>C:\Program Files\Arduino\libraries\digitalWriteFast\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\EEPROM</Value>
-            <Value>C:\Program Files\Arduino\libraries\EEPROM\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Esplora</Value>
-            <Value>C:\Program Files\Arduino\libraries\Esplora\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Ethernet</Value>
-            <Value>C:\Program Files\Arduino\libraries\Ethernet\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Firmata</Value>
-            <Value>C:\Program Files\Arduino\libraries\Firmata\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\GSM</Value>
-            <Value>C:\Program Files\Arduino\libraries\GSM\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\LiquidCrystal</Value>
-            <Value>C:\Program Files\Arduino\libraries\LiquidCrystal\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Robot_Control</Value>
-            <Value>C:\Program Files\Arduino\libraries\Robot_Control\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Robot_Motor</Value>
-            <Value>C:\Program Files\Arduino\libraries\Robot_Motor\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\SD</Value>
-            <Value>C:\Program Files\Arduino\libraries\SD\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Servo</Value>
-            <Value>C:\Program Files\Arduino\libraries\Servo\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\SoftwareSerial</Value>
-            <Value>C:\Program Files\Arduino\libraries\SoftwareSerial\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\SPI</Value>
-            <Value>C:\Program Files\Arduino\libraries\SPI\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Stepper</Value>
-            <Value>C:\Program Files\Arduino\libraries\Stepper\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\TFT</Value>
-            <Value>C:\Program Files\Arduino\libraries\TFT\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\WiFi</Value>
-            <Value>C:\Program Files\Arduino\libraries\WiFi\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Wire</Value>
-            <Value>C:\Program Files\Arduino\libraries\Wire\utility</Value>
-            <Value>c:\program files\arduino\hardware\tools\avr\avr\include\</Value>
-            <Value>c:\program files\arduino\hardware\tools\avr\avr\include\avr\</Value>
-            <Value>c:\program files\arduino\hardware\tools\avr\avr\</Value>
-            <Value>c:\program files\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\variants\standard</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries\digitalWriteFast</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries\digitalWriteFast\utility</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers</Value>
+            <Value>C:\Users\EliteBook\Documents\Arduino\libraries</Value>
+            <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\</Value>
+            <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\</Value>
+            <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\</Value>
+            <Value>c:\program files (x86)\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
         <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
@@ -118,46 +90,18 @@
         </avrgcccpp.compiler.symbols.DefSymbols>
         <avrgcccpp.compiler.directories.IncludePaths>
           <ListValues>
-            <Value>C:\Program Files\Arduino\hardware\arduino\cores\arduino</Value>
-            <Value>C:\Program Files\Arduino\hardware\arduino\variants\standard</Value>
-            <Value>C:\Program Files\Arduino\libraries\digitalWriteFast</Value>
-            <Value>C:\Program Files\Arduino\libraries\digitalWriteFast\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\EEPROM</Value>
-            <Value>C:\Program Files\Arduino\libraries\EEPROM\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Esplora</Value>
-            <Value>C:\Program Files\Arduino\libraries\Esplora\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Ethernet</Value>
-            <Value>C:\Program Files\Arduino\libraries\Ethernet\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Firmata</Value>
-            <Value>C:\Program Files\Arduino\libraries\Firmata\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\GSM</Value>
-            <Value>C:\Program Files\Arduino\libraries\GSM\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\LiquidCrystal</Value>
-            <Value>C:\Program Files\Arduino\libraries\LiquidCrystal\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Robot_Control</Value>
-            <Value>C:\Program Files\Arduino\libraries\Robot_Control\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Robot_Motor</Value>
-            <Value>C:\Program Files\Arduino\libraries\Robot_Motor\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\SD</Value>
-            <Value>C:\Program Files\Arduino\libraries\SD\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Servo</Value>
-            <Value>C:\Program Files\Arduino\libraries\Servo\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\SoftwareSerial</Value>
-            <Value>C:\Program Files\Arduino\libraries\SoftwareSerial\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\SPI</Value>
-            <Value>C:\Program Files\Arduino\libraries\SPI\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Stepper</Value>
-            <Value>C:\Program Files\Arduino\libraries\Stepper\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\TFT</Value>
-            <Value>C:\Program Files\Arduino\libraries\TFT\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\WiFi</Value>
-            <Value>C:\Program Files\Arduino\libraries\WiFi\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Wire</Value>
-            <Value>C:\Program Files\Arduino\libraries\Wire\utility</Value>
-            <Value>c:\program files\arduino\hardware\tools\avr\avr\include\</Value>
-            <Value>c:\program files\arduino\hardware\tools\avr\avr\include\avr\</Value>
-            <Value>c:\program files\arduino\hardware\tools\avr\avr\</Value>
-            <Value>c:\program files\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\variants\standard</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries\digitalWriteFast</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries\digitalWriteFast\utility</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers</Value>
+            <Value>C:\Users\EliteBook\Documents\Arduino\libraries</Value>
+            <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\</Value>
+            <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\</Value>
+            <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\</Value>
+            <Value>c:\program files (x86)\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\</Value>
             <Value>
             </Value>
           </ListValues>
@@ -192,46 +136,18 @@
         </avrgcc.compiler.symbols.DefSymbols>
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
-            <Value>C:\Program Files\Arduino\hardware\arduino\cores\arduino</Value>
-            <Value>C:\Program Files\Arduino\hardware\arduino\variants\standard</Value>
-            <Value>C:\Program Files\Arduino\libraries\digitalWriteFast</Value>
-            <Value>C:\Program Files\Arduino\libraries\digitalWriteFast\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\EEPROM</Value>
-            <Value>C:\Program Files\Arduino\libraries\EEPROM\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Esplora</Value>
-            <Value>C:\Program Files\Arduino\libraries\Esplora\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Ethernet</Value>
-            <Value>C:\Program Files\Arduino\libraries\Ethernet\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Firmata</Value>
-            <Value>C:\Program Files\Arduino\libraries\Firmata\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\GSM</Value>
-            <Value>C:\Program Files\Arduino\libraries\GSM\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\LiquidCrystal</Value>
-            <Value>C:\Program Files\Arduino\libraries\LiquidCrystal\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Robot_Control</Value>
-            <Value>C:\Program Files\Arduino\libraries\Robot_Control\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Robot_Motor</Value>
-            <Value>C:\Program Files\Arduino\libraries\Robot_Motor\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\SD</Value>
-            <Value>C:\Program Files\Arduino\libraries\SD\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Servo</Value>
-            <Value>C:\Program Files\Arduino\libraries\Servo\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\SoftwareSerial</Value>
-            <Value>C:\Program Files\Arduino\libraries\SoftwareSerial\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\SPI</Value>
-            <Value>C:\Program Files\Arduino\libraries\SPI\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Stepper</Value>
-            <Value>C:\Program Files\Arduino\libraries\Stepper\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\TFT</Value>
-            <Value>C:\Program Files\Arduino\libraries\TFT\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\WiFi</Value>
-            <Value>C:\Program Files\Arduino\libraries\WiFi\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Wire</Value>
-            <Value>C:\Program Files\Arduino\libraries\Wire\utility</Value>
-            <Value>c:\program files\arduino\hardware\tools\avr\avr\include\</Value>
-            <Value>c:\program files\arduino\hardware\tools\avr\avr\include\avr\</Value>
-            <Value>c:\program files\arduino\hardware\tools\avr\avr\</Value>
-            <Value>c:\program files\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\variants\standard</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries\digitalWriteFast</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries\digitalWriteFast\utility</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers</Value>
+            <Value>C:\Users\EliteBook\Documents\Arduino\libraries</Value>
+            <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\</Value>
+            <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\</Value>
+            <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\</Value>
+            <Value>c:\program files (x86)\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
         <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
@@ -252,46 +168,18 @@
         </avrgcccpp.compiler.symbols.DefSymbols>
         <avrgcccpp.compiler.directories.IncludePaths>
           <ListValues>
-            <Value>C:\Program Files\Arduino\hardware\arduino\cores\arduino</Value>
-            <Value>C:\Program Files\Arduino\hardware\arduino\variants\standard</Value>
-            <Value>C:\Program Files\Arduino\libraries\digitalWriteFast</Value>
-            <Value>C:\Program Files\Arduino\libraries\digitalWriteFast\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\EEPROM</Value>
-            <Value>C:\Program Files\Arduino\libraries\EEPROM\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Esplora</Value>
-            <Value>C:\Program Files\Arduino\libraries\Esplora\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Ethernet</Value>
-            <Value>C:\Program Files\Arduino\libraries\Ethernet\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Firmata</Value>
-            <Value>C:\Program Files\Arduino\libraries\Firmata\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\GSM</Value>
-            <Value>C:\Program Files\Arduino\libraries\GSM\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\LiquidCrystal</Value>
-            <Value>C:\Program Files\Arduino\libraries\LiquidCrystal\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Robot_Control</Value>
-            <Value>C:\Program Files\Arduino\libraries\Robot_Control\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Robot_Motor</Value>
-            <Value>C:\Program Files\Arduino\libraries\Robot_Motor\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\SD</Value>
-            <Value>C:\Program Files\Arduino\libraries\SD\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Servo</Value>
-            <Value>C:\Program Files\Arduino\libraries\Servo\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\SoftwareSerial</Value>
-            <Value>C:\Program Files\Arduino\libraries\SoftwareSerial\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\SPI</Value>
-            <Value>C:\Program Files\Arduino\libraries\SPI\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Stepper</Value>
-            <Value>C:\Program Files\Arduino\libraries\Stepper\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\TFT</Value>
-            <Value>C:\Program Files\Arduino\libraries\TFT\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\WiFi</Value>
-            <Value>C:\Program Files\Arduino\libraries\WiFi\utility</Value>
-            <Value>C:\Program Files\Arduino\libraries\Wire</Value>
-            <Value>C:\Program Files\Arduino\libraries\Wire\utility</Value>
-            <Value>c:\program files\arduino\hardware\tools\avr\avr\include\</Value>
-            <Value>c:\program files\arduino\hardware\tools\avr\avr\include\avr\</Value>
-            <Value>c:\program files\arduino\hardware\tools\avr\avr\</Value>
-            <Value>c:\program files\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\variants\standard</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries\digitalWriteFast</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries\digitalWriteFast\utility</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers</Value>
+            <Value>C:\Users\EliteBook\Documents\Arduino\libraries</Value>
+            <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\</Value>
+            <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\</Value>
+            <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\</Value>
+            <Value>c:\program files (x86)\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\</Value>
             <Value>
             </Value>
           </ListValues>
