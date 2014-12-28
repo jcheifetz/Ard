@@ -9,24 +9,24 @@
       <VCCodeMacros />
     </VCCodeModel>
     <BreakPoints>
-      <BreakPoint Index="1" Name="star1.ino, line 143" Id="220ddb3a-860e-4e30-bc55-df27d2a7803d" Enabled="1" Message="{millis()}" MessageTextType="2" PreProcessedMessage="{0}" Condition="millis()&gt;0 || millis()&gt;1" ConditionType="1" CurrentHits="0" File="e:\jonathan\ard\star1\star1.ino" FileLine="143" FileColumn="1" FunctionName="" FunctionLineOffset="1" FunctionColumnOffset="1" HitCountTarget="250" HitCountType="4" Language="" LocationType="3" Tag="&lt;vmbp Id='220ddb3a-860e-4e30-bc55-df27d2a7803d'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
-        <Source>136		pinMode(9, OUTPUT);
-137		pinMode(10, OUTPUT);
-138		pinMode(11, OUTPUT);
-139		pinMode(12, OUTPUT);
-140		pinMode(13, OUTPUT);
-141	}
-142	
---&gt;143	void loop(){
-144		if (!digitalRead(2) || DEBUG){
-145			if (!crossed || DEBUG){
-146	
-147				if (DEBUG) digitalWriteFast2(13, HIGH);
-148				
-149				// init delay
-150				crossTime = micros();
-151				while (micros() - crossTime &lt; initDelay){   }
-152				
+      <BreakPoint Index="1" Name="star1.ino, line 124" Id="02872629-8f22-4edf-acab-a7863eefa2d7" Enabled="1" Message="{millis()}" MessageTextType="2" PreProcessedMessage="{0}" Condition="millis()&gt;0 || millis()&gt;1" ConditionType="1" CurrentHits="0" File="e:\jonathan\ard\star1\star1.ino" FileLine="124" FileColumn="1" FunctionName="" FunctionLineOffset="1" FunctionColumnOffset="1" HitCountTarget="250" HitCountType="4" Language="" LocationType="3" Tag="&lt;vmbp Id='41336be2-48f3-4d71-87b0-857e5c5cc9b5'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="1">
+        <Source>117	  //pinMode(9, OUTPUT);
+118	  //pinMode(10, OUTPUT);
+119	  //pinMode(11, OUTPUT);
+120	  //pinMode(12, OUTPUT);
+121	  pinMode(13, OUTPUT);
+122	} 
+123	
+--&gt;124	void loop(){ 
+125	    if (!digitalRead(2) || DEBUG){
+126		    if (!crossed || DEBUG){
+127	
+128			  if (DEBUG) digitalWriteFast2(13, HIGH);
+129			  
+130			  // init delay
+131			  crossTime = micros();
+132			  while (micros() - crossTime &lt; initDelay){   }
+133				  
 </Source>
         <MessageVariables>
           <MessageVariable Name="millis()" Index="1" />
