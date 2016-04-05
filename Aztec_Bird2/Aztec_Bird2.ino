@@ -9,6 +9,7 @@ int subStepsTime[SUB_STEP_LENGTH+1] = {1000,1000};
 int subStepsCurrent = 0;//4
 int ssTime = 0;
 
+
 // Robus
 int stepTime = 13;
 int initDelay = 1000;

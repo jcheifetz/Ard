@@ -50,6 +50,13 @@
         <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
         <avrgcc.compiler.symbols.DefSymbols>
           <ListValues>
+            <Value>__AVR_ATmega328p__</Value>
+            <Value>__AVR_ATmega328P__</Value>
+            <Value>ARDUINO=101</Value>
+            <Value>ARDUINO_MAIN</Value>
+            <Value>F_CPU=16000000L</Value>
+            <Value>__AVR__</Value>
+            <Value>__cplusplus</Value>
           </ListValues>
         </avrgcc.compiler.symbols.DefSymbols>
         <avrgcc.compiler.directories.IncludePaths>
@@ -78,10 +85,13 @@
         <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
         <avrgcccpp.compiler.symbols.DefSymbols>
           <ListValues>
-            <Value>ARDUINO=103</Value>
+            <Value>__AVR_ATmega328p__</Value>
             <Value>__AVR_ATmega328P__</Value>
+            <Value>ARDUINO=101</Value>
+            <Value>ARDUINO_MAIN</Value>
             <Value>F_CPU=16000000L</Value>
             <Value>__AVR__</Value>
+            <Value>__cplusplus</Value>
           </ListValues>
         </avrgcccpp.compiler.symbols.DefSymbols>
         <avrgcccpp.compiler.directories.IncludePaths>
@@ -124,6 +134,13 @@
         <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
         <avrgcc.compiler.symbols.DefSymbols>
           <ListValues>
+            <Value>__AVR_ATmega328p__</Value>
+            <Value>__AVR_ATmega328P__</Value>
+            <Value>ARDUINO=101</Value>
+            <Value>ARDUINO_MAIN</Value>
+            <Value>F_CPU=16000000L</Value>
+            <Value>__AVR__</Value>
+            <Value>__cplusplus</Value>
           </ListValues>
         </avrgcc.compiler.symbols.DefSymbols>
         <avrgcc.compiler.directories.IncludePaths>
@@ -152,10 +169,13 @@
         <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
         <avrgcccpp.compiler.symbols.DefSymbols>
           <ListValues>
-            <Value>ARDUINO=103</Value>
+            <Value>__AVR_ATmega328p__</Value>
             <Value>__AVR_ATmega328P__</Value>
+            <Value>ARDUINO=101</Value>
+            <Value>ARDUINO_MAIN</Value>
             <Value>F_CPU=16000000L</Value>
             <Value>__AVR__</Value>
+            <Value>__cplusplus</Value>
           </ListValues>
         </avrgcccpp.compiler.symbols.DefSymbols>
         <avrgcccpp.compiler.directories.IncludePaths>
@@ -191,6 +211,14 @@
     <None Include="star1.ino">
       <SubType>compile</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Visual Micro\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Visual Micro\.Star1.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>

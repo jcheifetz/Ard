@@ -1,13 +1,13 @@
 #define _BV(bit) (1 << (bit))
 #define DEBUG false
 
-#define sL1 35
+#define sL1 40
 
-const byte s1[] PROGMEM  = {0 ,0 ,1 ,1 ,2 ,3 ,3 ,4 ,4 ,5 ,5 ,5 ,6 ,6 ,6 ,6 ,6 ,6 ,6 ,6 ,6 ,6 ,6 ,6 ,5 ,5 ,5 ,4 ,4 ,3 ,3 ,2 ,1 ,1 ,0 };
+const byte s1[] PROGMEM  = {0 ,0 ,1 ,1 ,2 ,3 ,3 ,4 ,4 ,5 ,5 ,6 ,6 ,6 ,7 ,7 ,7 ,7 ,7 ,7 ,8 ,7 ,7 ,7 ,7 ,7 ,7 ,6 ,6 ,6 ,5 ,5 ,4 ,4 ,3 ,3 ,2 ,1 ,1 ,0 };
 
 
 // Robus
-int stepTime = 20;
+int stepTime = 15;
 int initDelay = 800;
 long crossTime;
 boolean crossed=false;
@@ -46,7 +46,11 @@ void zeroCross(){
 
   if (t<1){
 	  r = random(6)+1;
-	  r = 256 - (r*r*r);
+	  // fix level
+	  r = 60;
+
+	  //r = 256 - (r*r*r);
+	  r = 256 - r;
 	  
 	  //t = random(31);
 	  //t = 910-(t*t);
@@ -62,6 +66,7 @@ void zeroCross(){
 	     PORTB |= _BV(3);//11*
 	     PORTB |= _BV(2);//10*
 	     PORTB |= _BV(4);//12*
+		 PORTD |= _BV(7);//7   
 		 PORTB |= _BV(5);//13
      }
      crossTime = micros();

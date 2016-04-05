@@ -27,7 +27,7 @@ for (var j=0;j<steps2;j++){
 	var pos = (Math.PI / steps) * i;
 
 	vl = Math.sin(pos)*255;
-	//vl*=vl2;
+	vl*=vl2;
     vl = parseInt(vl);
     if (vl>255){
         vl=255;
@@ -47,7 +47,7 @@ for (var j=0;j<steps2;j++){
 
 // wait
 for (var i=0;i<3*50;i++){
-	draw(0);
+	//draw(0);
 }
 
 $("#op").html(str +"<br/><br/<br/>" + ln);
