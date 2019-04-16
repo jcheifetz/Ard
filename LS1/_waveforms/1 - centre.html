@@ -1,0 +1,44 @@
+<html>
+<body>
+<div id="op"></div>
+<div style="position:absolute;width:100%;height:280px;border:1px solid red;background:yellow;" id="dr"></div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+<script>
+
+$(function(){
+
+var x = 0;
+var ln = 0;
+var str="";
+
+for (k=0;k<4;k++){
+	var ts = parseInt(Math.random()*4);
+
+	for (var i=0;i<4;i++){
+
+		var tm = parseInt(Math.random()*(ts*ts)*50)+5;
+		vl = parseInt(Math.random()*150)+100;
+
+		for (j=0;j<tm;j++){
+
+			str += (255-vl)+", ";
+			draw(vl);
+		}
+	}
+
+}
+$("#op").html(str +"<br/><br/>" + ln);
+
+function draw(vl){
+var e = $("<div/>").css({position:"absolute",left:x+"px",bottom:vl+"px"}).text("*");
+var b = $("<div/>").css({position:"absolute",left:x+"px",bottom:"5px"}).text("-");
+var t = $("<div/>").css({position:"absolute",left:x+"px",bottom:"260px"}).text("-");
+x+=2;
+$("#dr").append(e).append(b).append(t);
+ln++;
+}
+
+});
+</script>
+</body>
+</html>

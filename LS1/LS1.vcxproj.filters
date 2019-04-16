@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Aztec_New3.ino" />
+    <None Include="LS0.ino" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="__vm\.Aztec_New3.vsarduino.h">
+    <ClInclude Include="__vm\.LS0.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

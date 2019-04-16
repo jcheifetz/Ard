@@ -42,18 +42,6 @@
 #define sL13 100
 #define sS13 0
 
-// DO - A
-// D1 - B,C
-// D3 - D
-// D4 - G,H
-// D5 - I
-// D6 - M
-// D7 - N
-// D8 - L
-// D9 - K
-// D10 - E,F
-// D11 - J1
-// D12 - J
 
 
 

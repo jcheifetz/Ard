@@ -18,13 +18,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -43,6 +43,9 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Aztec_New3;$(ProjectDir)..\..\..\Documents\Arduino\libraries\digitalWriteFast;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\libraries;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;$(ProjectDir)..\..\..\Documents\Arduino\libraries;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\variants\standard;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\avr\include;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.2\include;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.Aztec_New3.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>__AVR_atmega328p__;__AVR_ATmega328P__;ARDUINO=10608;ARDUINO_MAIN;__AVR__;__avr__;F_CPU=16000000L;__cplusplus=201103L;ARDUINO_ARCH_AVR;ARDUINO_AVR_UNO;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -54,6 +57,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>F:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;F:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\standard;F:\Users\cheifetz\Desktop\Ard\Aztec_New3;F:\Users\cheifetz\Documents\Arduino\libraries\digitalWriteFast;F:\Users\cheifetz\Documents\Arduino\libraries\digitalWriteFast\utility;F:\Program Files (x86)\Arduino\libraries;F:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;F:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\fzftw1jl.2vt\Micro Platforms\default\debuggers;F:\Users\cheifetz\Documents\Arduino\libraries;F:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;F:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\standard;F:\Users\cheifetz\Documents\Arduino\libraries\digitalWriteFast;F:\Program Files (x86)\Arduino\libraries;F:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;F:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\fzftw1jl.2vt\Micro Platforms\default\debuggers;F:\Users\cheifetz\Documents\Arduino\libraries;f:\program files (x86)\arduino\hardware\tools\avr\avr\include\;f:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\;f:\program files (x86)\arduino\hardware\tools\avr\avr\;f:\program files (x86)\arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -62,6 +66,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="Aztec_New3.ino" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__vm\.Aztec_New3.vsarduino.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
