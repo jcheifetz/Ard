@@ -241,5 +241,5 @@ void zeroCross(){
    if (sP13==sL13) sP13=0;
 
 	d++;
-	if (d==3) d=0;
+	if (d==16) d=0;
 }
